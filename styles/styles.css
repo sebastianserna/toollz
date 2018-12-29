@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    background: #3c3c3c;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 700px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 { 
+    text-align: center;
+    color: white; 
+}
+
+main {
+    padding-top: 80px;
+}
+
+.app-header {
+    background: #2d2d2d;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.5);
+}
+
+.app-header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 30px;
+}
+
+.logo {
+    margin-right: 20px; 
+ }
+ 
+ .logo-text {
+    margin-bottom: 0;
+    font-family: 'Baloo', cursive;
+    letter-spacing: 2px;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: lowercase;
+ }
+ 
+ .logo-slogan {
+    font-family: 'Baloo', cursive;
+    color: rgba(255, 255, 255, 0.45);
+    letter-spacing: 3px;
+    font-size: 8px;
+    margin-top: 2px;
+    text-transform: uppercase;
+    display: block;
+ }
+
+ @media (max-width: 600px) {
+    .logo {
+        margin-left: 10px;
+    }
+
+    .logo-text {
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
+    .logo-slogan {
+        display: none;
+    }
+    .app-header-content {
+        padding: 0 10px;
+    }
+}
+ 
+.subtitle {
+    color: white;
+    text-align: center;
+}
+
+.filters {
+    text-align: center;
+    height: 30px;
+    margin: 15px 0;
+}
+
+.search-input {
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);    
+    color: rgba(255, 255, 255, 1);
+    outline: 0px;
+    width: 200px;
+    transition: all .2s ease;
+    font-size: 11px;
+    letter-spacing: 1px;
+ }
+
+.search-input:focus  {
+   background: rgba(0, 0, 0, 0.2);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   color: rgba(255, 255, 255, 1);
+   transition: all .2s ease;
+}
+
+::-moz-placeholder { 
+    color: rgba(255, 255, 255, 0.6);
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+@media (max-width: 600px) {
+    .search-input {
+        width: 150px;
+     }
+}
+
+/* ICON */
+
+.tool-icon {
+    background: rgba(255, 255, 255, 0.2);
+    width:80px;
+    height:80px;
+    border-radius:40px; 
+    margin: 32px auto;  
+}
+
+/* CARDS */
+
+.cards {
+    width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+@media (max-width: 1080px) {
+    .cards {
+        width: 800px;
+        grid-template-columns: repeat(3, 1fr);  
+    }
+}
+
+@media (max-width: 800px) {
+    .cards {
+        width: 560px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .cards {
+        width: 300px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.cards-lenght {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    margin-right: 5px;
+    text-transform: uppercase;
+}
+
+/* Flipcard based on https://desandro.github.io/3dtransforms/docs/card-flip.html */
+
+.card { 
+    width: 250px;
+    height: 300px;
+    position: relative;
+    perspective: 800px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.card ::selection {
+    background: none;
+  }
+  
+.card ::-moz-selection {
+    background: none;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}  
+
+.card-content figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px; 
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+
+  .card-content .front {
+    color: white;
+    background: black;
+    transition: all 0.5s ease;
+    border: 2px solid black;    
+  }
+
+  .card-content .front:hover {
+    color: white;
+    background: black;
+    transition: all 0.5s ease;
+    border: 2px solid white;
+  }
+
+  .card-content .front:hover h2 {
+    /* color: black; */
+  }
+
+    .card-content .front h2 {
+        font-size: 24px; 
+        font-family: sans-serif;
+        margin: 0;
+        margin-top: 40px;
+        font-weight: normal;
+        color: white;
+    }
+
+    .card-content .front h4 {
+        font-size: 10px; 
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        margin: 16px 18px ;
+        bottom: 0;
+        position: absolute;
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+  .card-content .back {
+    background: white;
+    color: black;
+    transform: rotateY( 180deg );
+    padding: 0 30px;
+  }
+
+    .card-content .back h2 {
+        font-size: 24px; 
+        font-family: sans-serif;
+        margin: 0;
+        margin-top: 80px;
+        font-weight: normal;
+        color: black;        
+    }
+
+    .card-content .back h3 {
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    .card-content .back p {
+        /* margin: 0;   */
+        font-size: 14px; 
+        color: #999;           
+    }
+
+  .card-content.flip {
+    transform: rotateY( 180deg );
+  }
+
+
+/* Vue cloak https://vuejs.org/v2/api/#v-cloak 
+Se utiliza para esconder las etiquetas mustache {{ }} mientras no 
+se ha cargado el contenido */
+
+[v-cloak] {
+    display: none;
+}
+
+/* Transition https://vuejs.org/v2/guide/transitions.html */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
