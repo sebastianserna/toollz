@@ -49,6 +49,12 @@
     "summary": "Create beautiful 3D models", 
     "type": "3D app",
     "url": "https://www.vectary.com/"
+  },
+  { 
+    "name": "CSSPeeper", 
+    "summary": "Smart CSS viewer tailored for Designers", 
+    "type": "Chrome extension",
+    "url": "https://csspeeper.com/"
   }
 
 ]
