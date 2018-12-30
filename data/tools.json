@@ -24,6 +24,31 @@
     "summary": "UI design solution for experience designers", 
     "type": "app",
     "url": "https://www.invisionapp.com/studio"
+  },
+  { 
+    "name": "Marvel", 
+    "summary": "Prototype & design tool", 
+    "type": "app",
+    "icon": "../images/favicon.png",
+    "url": "https://marvelapp.com"
+  },
+  { 
+    "name": "Framer", 
+    "summary": "UI design tool", 
+    "type": "app",
+    "url": "https://www.framer.com/"
+  },
+  { 
+    "name": "Webflow", 
+    "summary": "UI design tool", 
+    "type": "app",
+    "url": "https://www.Webflow.com"
+  },
+  { 
+    "name": "Vectary", 
+    "summary": "Create beautiful 3D models", 
+    "type": "3D app",
+    "url": "https://www.vectary.com/"
   }
 
 ]

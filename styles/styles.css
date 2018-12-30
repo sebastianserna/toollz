@@ -1,22 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 :root {
     --primary:                   royalblue;
     --secondary:                 rebeccapurple;
 
     --gradient-primary:           linear-gradient(142.86deg, #914EFF 7.56%, #7B8AF1 53.64%, #01D1FF 89.33%);
+    --shadow-medium:              0px 2px 8px rgba(0, 0, 0, 0.1);
 
     --body-bg:                    #FBFBFB;
     --topbar-bg:                  var(--gradient-primary);
     --topbar-shadow:              none;
 
-    --font-logo:                  'Baloo', cursive;
+    --anim-basic:                 0.1s cubic-bezier(0.2, 0.2, 0.2, 0.5);
+    --anim-basic-scale:           scale(1.05, 1.05);
+    --anim-basic-shadow:          0 10px 20px rgba(0, 0, 0, 0.1);
+
     --primary-font:               'Open Sans', sans-serif;
 
-    --tool-icon-bg:              var(--gray1);
+    --logo-font:                  'Baloo', cursive;
+    --logo-color:                 var(--white);
 
-    --card-shadow:                0px 2px 8px rgba(0, 0, 0, 0.1);
+    --tool-icon-bg:              #79CFFF;
+
+    --card-shadow:                var(--shadow-medium);
 
     --card-front-bg:              var(--white);
     --card-front-border:          2px solid white;
@@ -50,7 +57,9 @@
 }
 
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -69,22 +78,59 @@ header {
     text-align: center;
 }
 
-h1 { 
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { 
     text-align: center;
-    color: white; 
+    font-weight: 300;
+    font-family: var(--primary-font);
 }
 
 main {
-    padding-top: 80px;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 220px;
+    min-height: 580px;
+}
+
+
+.topbar {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: var(--topbar-shadow);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    transition: all .5s;
+}
+
+.topbar-bg-solid {
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-medium);
 }
 
 .app-header {
     background: var(--topbar-bg);
-    overflow: auto;
-    position: fixed;
+    overflow: hidden;
     width: 100%;
     z-index: 9999;
     box-shadow: var(--topbar-shadow);
+    padding:0;
+    position: relative;
+
 }
 
 .app-header-content {
@@ -93,30 +139,22 @@ main {
     justify-content: space-between;
     flex-direction: row;
     padding: 0 30px;
+    height: 530px;
 }
 
 .logo {
-    margin-right: 20px; 
+    padding: 20px 40px; 
  }
  
  .logo-text {
     margin-bottom: 0;
-    font-family: var(--font-logo);
+    font-family: var(--logo-font);
+    color: var(--logo-color);
     letter-spacing: 2px;
-    font-size: 26px;
+    font-size: 38px;
     margin-top: 0;
     margin-bottom: 0;
     text-transform: lowercase;
- }
- 
- .logo-slogan {
-    font-family: var(--font-logo);
-    color: rgba(255, 255, 255, 0.45);
-    letter-spacing: 3px;
-    font-size: 8px;
-    margin-top: 2px;
-    text-transform: uppercase;
-    display: block;
  }
 
  @media (max-width: 600px) {
@@ -131,10 +169,7 @@ main {
         margin-top: 0;
         margin-bottom: 0;
     }
-    
-    .logo-slogan {
-        display: none;
-    }
+
     .app-header-content {
         padding: 0 10px;
     }
@@ -186,7 +221,51 @@ main {
      }
 }
 
-/* ICON */
+/* HERO */
+
+.hero {
+    width: 100%;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+.hero h3 {
+    color: white;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+/* BUTTONS */
+
+.button {
+    color: white;
+    height: 48px;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.button.outline {
+    border: 2px solid white;
+    border-radius: 48px;
+    height: 48px;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.button.outline:hover {
+    background: #914EFF;
+}
+
+/* TOOL ICON */
 
 .tool-icon {
     background: var(--tool-icon-bg);
@@ -289,6 +368,7 @@ main {
     backface-visibility: hidden;
     border-radius: 15px; 
     box-shadow: var(--card-shadow);
+    transition: var(--anim-basic);
   }
 
   .card-content .front {
@@ -303,6 +383,8 @@ main {
     background: var(--card-front-hover-bg);
     transition: all 0.5s ease;
     border: var(--card-front-hover-border);
+    transform: var(--anim-basic-scale);
+    box-shadow: var(--anim-basic-shadow);
   }
 
   .card-content .front:hover h2 {
@@ -326,7 +408,7 @@ main {
         bottom: 0;
         position: absolute;
         font-weight: 300;
-        color: rgba(255, 255, 255, 0.3);
+        color: rgba(0, 0, 0, 0.6);
     }
 
   .card-content .back {
