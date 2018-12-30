@@ -3,99 +3,143 @@
   { 
     "name": "Figma", 
     "summary": "Design, prototype, and gather feedback all in one place", 
-    "type": "app",
-    "icon": "../images/favicon.png",
-    "url": "https://figma.com"
+    "type": "App",
+    "url": "https://figma.com",
+    "icon": "/images/icon-figma.svg"
   },
   { 
     "name": "Sketch", 
     "summary": "UI design tool", 
-    "type": "app",
-    "url": "https://www.sketchapp.com/"
+    "type": "App",
+    "url": "https://www.sketchapp.com/",
+    "icon": "/images/icon-sketch.svg"
   },
   { 
     "name": "InVision Studio", 
     "summary": "Screen design. Redesigned", 
-    "type": "app",
-    "url": "https://www.invisionapp.com/studio"
+    "type": "App",
+    "url": "https://www.invisionapp.com/studio",
+    "icon": "/images/icon-invision-studio.svg"
   },
   { 
     "name": "Adobe XD", 
     "summary": "UI design solution for experience designers", 
-    "type": "app",
-    "url": "https://www.invisionapp.com/studio"
+    "type": "App",
+    "url": "https://www.invisionapp.com/studio",
+    "icon": "/images/icon-adobe-xd.svg"
   },
   { 
     "name": "Marvel", 
     "summary": "Prototype & design tool", 
-    "type": "app",
-    "icon": "../images/favicon.png",
-    "url": "https://marvelapp.com"
+    "type": "App",
+    "icon": "../images/icon-default.svg",
+    "url": "https://marvelapp.com",
+    "icon": "/images/icon-marvel.svg"
   },
   { 
     "name": "Framer", 
     "summary": "UI design tool", 
-    "type": "app",
-    "url": "https://www.framer.com/"
+    "type": "App",
+    "url": "https://www.framer.com/",
+    "icon": "/images/icon-framer.svg"
   },
   { 
     "name": "Webflow", 
     "summary": "UI design tool", 
-    "type": "app",
-    "url": "https://www.Webflow.com"
+    "type": "App",
+    "url": "https://www.Webflow.com",
+    "icon": "/images/icon-webflow.svg"
   },
   { 
     "name": "Vectary", 
     "summary": "Create beautiful 3D models", 
-    "type": "3D app",
-    "url": "https://www.vectary.com/"
+    "type": "3D App",
+    "url": "https://www.vectary.com/",
+    "icon": "/images/icon-vectary.png"
   },
   { 
     "name": "CSSPeeper", 
     "summary": "Smart CSS viewer tailored for Designers", 
-    "type": "Chrome extension",
-    "url": "https://csspeeper.com/"
+    "type": "Chrome Extension",
+    "url": "https://csspeeper.com/",
+    "icon": "/images/icon-css-peeper.svg"
   },
   { 
     "name": "Adobe Photoshop", 
     "summary": "Photo editor", 
     "type": "App",
-    "url": "https://www.adobe.com/products/photoshop"
+    "url": "https://www.adobe.com/products/photoshop",
+    "icon": "/images/icon-adobe-photoshop.svg"
   },
   { 
     "name": "Gimp", 
     "summary": "Photo editor", 
     "type": "App",
-    "url": "https://www.gimp.org"
+    "url": "https://www.gimp.org",
+    "icon": "/images/icon-gimp.png"
   },
   { 
     "name": "Affinity Photo", 
     "summary": "Photo editor", 
     "type": "App",
-    "url": "https://affinity.serif.co"
+    "url": "https://affinity.serif.com/photo/desktop/",
+    "icon": "/images/icon-affinity-photo.png"
   },
   { 
     "name": "Whimsical", 
     "summary": "Wireframes, flowcharts, Sticky Notes", 
     "type": "App",
-    "url": "https://whimsical.co/"
+    "url": "https://whimsical.co/",
+    "icon": "/images/icon-default.svg"
   },
   { 
     "name": "Subform", 
     "summary": "visual tool for creating dynamic UI layouts", 
     "type": "App",
-    "url": "https://subformapp.com/"
+    "url": "https://subformapp.com/",
+    "icon": "/images/icon-default.svg"
   }, 
   { 
     "name": "Overflow", 
     "summary": "User flows done right", 
     "type": "App",
-    "url": "https://overflow.io/"
+    "url": "https://overflow.io/",
+    "icon": "/images/icon-default.svg"
   },
   { 
     "name": "Maze", 
     "summary": "Analytics for prototypes", 
     "type": "App",
-    "url": "https://maze.design"
+    "url": "https://maze.design",
+    "icon": "/images/icon-default.svg"
+  },
+  { 
+    "name": "Draftium", 
+    "summary": "Turbo prototyping tool for websites", 
+    "type": "App",
+    "url": "https://draftium.com/",
+    "icon": "/images/icon-default.svg"
+  },
+  { 
+    "name": "Illustrator", 
+    "summary": "The state of the art of illustration", 
+    "type": "App",
+    "url": "https://www.adobe.com/products/illustrator",
+    "icon": "/images/icon-default.svg"
+  },
+  { 
+    "name": "Inkscape", 
+    "summary": "Professional vector graphics editor", 
+    "type": "App",
+    "url": "https://inkscape.org",
+    "icon": "/images/icon-default.svg"
+  },
+  { 
+    "name": "Gravit Designer", 
+    "summary": "Cross-platform design tool", 
+    "type": "App",
+    "url": "https://www.designer.io/",
+    "icon": "/images/icon-default.svg"
   }
+ 
 ]

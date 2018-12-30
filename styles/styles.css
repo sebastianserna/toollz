@@ -21,7 +21,9 @@
     --logo-font:                  'Baloo', cursive;
     --logo-color:                 var(--white);
 
-    --tool-icon-bg:              #79CFFF;
+    --tool-icon-bg:              var(--white);
+    --tool-icon-border:          solid 1px var(--white);
+    --tool-icon-shadow:          var(--shadow-medium);
 
     --card-shadow:                var(--shadow-medium);
 
@@ -80,6 +82,8 @@ header {
 
 a {
     text-decoration: none;
+    font-family: var(--primary-font);
+    font-weight: 300;
 }
 
 h1,
@@ -271,11 +275,31 @@ main {
     transition: .2s;
 }
 
+/* BUTTON SIZES */
+
+.button.large {
+    font-size: 16px;
+    height: 48px;
+    padding: 12px 30px;
+}
+
+.button.medium {
+    font-size: 14px;
+    height: 38px;
+    padding: 8px 30px;
+}
+
+.button.small {
+    font-size: 12px;
+    height: 24px !important;
+    padding: 1px 12px !important;
+}
+
+/* BUTTON STYLES */
+
 .button.outline {
     border: 2px solid white;
     border-radius: 48px;
-    height: 48px;
-    padding: 12px 30px;
     text-decoration: none;
     transition: .2s;
 }
@@ -288,10 +312,16 @@ main {
 
 .tool-icon {
     background: var(--tool-icon-bg);
+    border: var(--tool-icon-border);
+    box-shadow: var(--tool-icon-shadow);
     width:80px;
     height:80px;
     border-radius:40px; 
     margin: 32px auto;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 /* CARDS */
@@ -411,7 +441,7 @@ main {
   }
 
     .card-content .front h2 {
-        font-size: 24px; 
+        font-size: 20px; 
         font-family: var(--primary-font);
         color: var(--card-front-text-color);
         margin: 0;
@@ -435,13 +465,15 @@ main {
     color: var(--card-back-text-color);
     transform: rotateY( 180deg );
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
     .card-content .back h2 {
-        font-size: 24px; 
+        font-size: 20px; 
         font-family: var(--primary-font);
         margin: 0;
-        margin-top: 40px;
         font-weight: 300;
         color: var(--card-back-text-color);        
     }
@@ -455,10 +487,18 @@ main {
     .card-content .back p {
         font-size: 14px; 
         font-weight: 300;
+        margin-top: 0;
         color: var(--card-back-text-color);     
         font-family: var(--primary-font);
         opacity: 0.8;      
     }
+
+    .card-content .back a {
+        margin-top: auto;
+        margin-bottom: 22px;
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
 
   .card-content.flip {
     transform: rotateY( 180deg );

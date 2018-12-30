@@ -60,14 +60,15 @@
             <div class="card" v-for="tool in filterTools">            
                 <div class="card-content" onclick="this.classList.toggle('flip');">
                     <figure class="front">
-                        <div class="tool-icon"></div>
+                        <div class="tool-icon"><img v-bind:src="tool.icon"/></div>
                         <h2 v-cloak>{{ tool.name }}</h2> 
-                        <h4 v-cloak v-if="tool.type">Type: {{ tool.type }}</h4>                       
+                        <h4 v-cloak v-if="tool.type">{{ tool.type }}</h4>                       
                     </figure> 
                     <figure class="back">
-                        <div class="tool-icon"></div>
+                        <div class="tool-icon"><img v-bind:src="tool.icon"/></div>
                         <h2>{{ tool.name }}</h2>
                         <p>{{ tool.summary }}</p>
+                        <a class="button small outline" v-bind:href="tool.url" target="_blank" rel="noopener">Official Site</a>
                     </figure>       
                 </div>
             </div>
@@ -81,15 +82,15 @@
 <script src="scripts/app.js"></script>
 
 <script>
-    window.onscroll = function() {
-        var topBar = document.getElementById('topbar');
+window.onscroll = function() {
+    var topBar = document.getElementById('topbar');
 
-        if ( window.pageYOffset >= 340 ) {
-            topBar.classList.add("topbar-bg-solid");
-        } else {
-            topBar.classList.remove("topbar-bg-solid");
-        }
-    };
+    if ( window.pageYOffset >= 340 ) {
+        topBar.classList.add("topbar-bg-solid");
+    } else {
+        topBar.classList.remove("topbar-bg-solid");
+    }
+};
 </script>
 
 </body>
