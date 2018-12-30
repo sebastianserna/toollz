@@ -67,6 +67,12 @@
     "summary": "Photo editor", 
     "type": "App",
     "url": "https://www.gimp.org"
+  },
+  { 
+    "name": "Affinity Photo", 
+    "summary": "Photo editor", 
+    "type": "App",
+    "url": "https://affinity.serif.co"
   }
 
 ]
