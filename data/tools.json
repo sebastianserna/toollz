@@ -73,6 +73,12 @@
     "summary": "Photo editor", 
     "type": "App",
     "url": "https://affinity.serif.co"
-  }
+  },
+  { 
+    "name": "Whimsical", 
+    "summary": "Wireframes, flowcharts, Sticky Notes", 
+    "type": "App",
+    "url": "https://whimsical.co/"
+  }  
 
 ]
