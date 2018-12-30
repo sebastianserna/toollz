@@ -79,6 +79,23 @@
     "summary": "Wireframes, flowcharts, Sticky Notes", 
     "type": "App",
     "url": "https://whimsical.co/"
-  }  
-
+  },
+  { 
+    "name": "Subform", 
+    "summary": "visual tool for creating dynamic UI layouts", 
+    "type": "App",
+    "url": "https://subformapp.com/"
+  }, 
+  { 
+    "name": "Overflow", 
+    "summary": "User flows done right", 
+    "type": "App",
+    "url": "https://overflow.io/"
+  },
+  { 
+    "name": "Maze", 
+    "summary": "Analytics for prototypes", 
+    "type": "App",
+    "url": "https://maze.design"
+  }
 ]
