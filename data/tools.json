@@ -55,6 +55,18 @@
     "summary": "Smart CSS viewer tailored for Designers", 
     "type": "Chrome extension",
     "url": "https://csspeeper.com/"
+  },
+  { 
+    "name": "Adobe Photoshop", 
+    "summary": "Photo editor", 
+    "type": "App",
+    "url": "https://www.adobe.com/products/photoshop"
+  },
+  { 
+    "name": "Gimp", 
+    "summary": "Photo editor", 
+    "type": "App",
+    "url": "https://www.gimp.org"
   }
 
 ]
