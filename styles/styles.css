@@ -195,6 +195,11 @@ main {
         height: 50px;
         padding-right: 8px;
     }
+
+    .hero h1 {
+        margin-top: 40px;
+    
+    }
 }
  
 .subtitle {
