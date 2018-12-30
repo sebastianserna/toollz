@@ -1,11 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+:root {
+    --primary:                   royalblue;
+    --secondary:                 rebeccapurple;
+
+    --body-bg:                    #FBFBFB;
+    --topbar-bg:                  linear-gradient(142.86deg, #914EFF 7.56%, #7B8AF1 53.64%, #01D1FF 89.33%);
+    --topbar-shadow:              none;
+
+    --font-logo:                  'Baloo', cursive;
+    --primary-font:               'Open Sans', sans-serif;
+
+    --tool-icon-bg:              #79CFFF;
+
+    --card-shadow:                0px 2px 8px rgba(0, 0, 0, 0.05);
+
+    --card-front-bg:              var(--white);
+    --card-front-border:          2px solid white;
+    --card-front-text-color:      var(--gray6);
+
+    --card-front-hover-bg:        var(--white);
+    --card-front-hover-border:    2px solid white;
+
+    --input-bg:                 #FFFFFF;
+    --input-border:             #FFFFFF;
+
+    --white:                    #FFFFFF ; 
+    --gray1:                    #F2F2F2 ;
+    --gray2:                    #CCCCCC ;
+    --gray3:                    #B3B3B3 ;
+    --gray4:                    #999999 ;
+    --gray5:                    #808080 ;
+    --gray6:                    #595959 ;
+    --gray7:                    #4D4D4D ;
+    --gray8:                    #333333 ;
+    --gray9:                    #1A1A1A ;
+    --black:                    #000000 ;
+}
+
+
+
 
 * {
     box-sizing: border-box;
 }
 
 body { 
-    background: #3c3c3c;
+    background: var(--body-bg);
     box-sizing: border-box;
     font-family: sans-serif;
     margin: 0;
@@ -27,12 +69,12 @@ main {
 }
 
 .app-header {
-    background: #2d2d2d;
+    background: var(--topbar-bg);
     overflow: auto;
     position: fixed;
     width: 100%;
     z-index: 9999;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,.5);
+    box-shadow: var(--topbar-shadow);
 }
 
 .app-header-content {
@@ -49,7 +91,7 @@ main {
  
  .logo-text {
     margin-bottom: 0;
-    font-family: 'Baloo', cursive;
+    font-family: var(--font-logo);
     letter-spacing: 2px;
     font-size: 26px;
     margin-top: 0;
@@ -58,7 +100,7 @@ main {
  }
  
  .logo-slogan {
-    font-family: 'Baloo', cursive;
+    font-family: var(--font-logo);
     color: rgba(255, 255, 255, 0.45);
     letter-spacing: 3px;
     font-size: 8px;
@@ -137,7 +179,7 @@ main {
 /* ICON */
 
 .tool-icon {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--tool-icon-bg);
     width:80px;
     height:80px;
     border-radius:40px; 
@@ -236,21 +278,21 @@ main {
     height: 100%;
     backface-visibility: hidden;
     border-radius: 15px; 
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: var(--card-shadow);
   }
 
   .card-content .front {
-    color: white;
-    background: black;
+    color: var(--card-front-text-color);
+    background: var(--card-front-bg);
     transition: all 0.5s ease;
-    border: 2px solid black;    
+    border: var(--card-front-border);    
   }
 
   .card-content .front:hover {
     color: white;
-    background: black;
+    background: var(--card-front-hover-bg);
     transition: all 0.5s ease;
-    border: 2px solid white;
+    border: var(--card-front-hover-border);
   }
 
   .card-content .front:hover h2 {
@@ -259,11 +301,11 @@ main {
 
     .card-content .front h2 {
         font-size: 24px; 
-        font-family: sans-serif;
+        font-family: var(--primary-font);
+        color: var(--card-front-text-color);
         margin: 0;
         margin-top: 40px;
         font-weight: normal;
-        color: white;
     }
 
     .card-content .front h4 {
@@ -284,17 +326,13 @@ main {
     padding: 0 30px;
   }
 
-    .card-content .back .tool-icon {
-        background: rgba(0, 0, 0, 0.1);
-    }
-
     .card-content .back h2 {
         font-size: 24px; 
-        font-family: sans-serif;
+        font-family: var(--primary-font);
         margin: 0;
         margin-top: 40px;
         font-weight: normal;
-        color: black;        
+        color: var(--gray6);        
     }
 
     .card-content .back h3 {
@@ -303,9 +341,8 @@ main {
     }
 
     .card-content .back p {
-        /* margin: 0;   */
         font-size: 14px; 
-        color: #999;           
+        color: var(--gray3);           
     }
 
   .card-content.flip {
