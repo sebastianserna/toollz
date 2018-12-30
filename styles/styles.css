@@ -139,7 +139,17 @@ main {
     justify-content: space-between;
     flex-direction: row;
     padding: 0 30px;
-    height: 530px;
+    height: 440px;
+}
+
+.app-header-content svg.hero-bg-bottom {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+    display: block;
 }
 
 .logo {
@@ -160,18 +170,26 @@ main {
  @media (max-width: 600px) {
     .logo {
         margin-left: 10px;
+        padding: 10px 8px;
     }
 
     .logo-text {
         margin-bottom: 0;
         letter-spacing: 2px;
-        font-size: 18px;
+        font-size: 22px;
         margin-top: 0;
         margin-bottom: 0;
     }
 
     .app-header-content {
         padding: 0 10px;
+        height: 480px;
+    }
+
+    .topbar {
+        padding: 0;
+        height: 50px;
+        padding-right: 8px;
     }
 }
  
@@ -225,13 +243,14 @@ main {
 
 .hero {
     width: 100%;
+    padding: 0 30px;
 }
 
 .hero h1 {
     color: white;
     font-size: 42px;
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 80px;
 
 }
 
