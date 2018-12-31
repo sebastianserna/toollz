@@ -58,7 +58,7 @@
     "icon": "./images/icon-vectary.png"
   },
   { 
-    "name": "CSSPeeper", 
+    "name": "CSS Peeper", 
     "summary": "Smart CSS viewer tailored for Designers", 
     "type": "Chrome Extension",
     "url": "https://csspeeper.com/",
@@ -90,28 +90,28 @@
     "summary": "Wireframes, flowcharts, Sticky Notes", 
     "type": "App",
     "url": "https://whimsical.co/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-whimsical.png"
   },
   { 
     "name": "Subform", 
     "summary": "visual tool for creating dynamic UI layouts", 
     "type": "App",
     "url": "https://subformapp.com/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-subform.png"
   }, 
   { 
     "name": "Overflow", 
     "summary": "User flows done right", 
     "type": "App",
     "url": "https://overflow.io/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-overflow.svg"
   },
   { 
     "name": "Maze", 
     "summary": "Analytics for prototypes", 
     "type": "App",
     "url": "https://maze.design",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-maze.png"
   },
   { 
     "name": "Draftium", 
