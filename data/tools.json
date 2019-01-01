@@ -118,28 +118,28 @@
     "summary": "Turbo prototyping tool for websites", 
     "type": "App",
     "url": "https://draftium.com/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-draftium.png"
   },
   { 
     "name": "Illustrator", 
     "summary": "The state of the art of illustration", 
     "type": "App",
     "url": "https://www.adobe.com/products/illustrator",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-illustrator.svg"
   },
   { 
     "name": "Inkscape", 
     "summary": "Professional vector graphics editor", 
     "type": "App",
     "url": "https://inkscape.org",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-inkscape.svg"
   },
   { 
     "name": "Gravit Designer", 
     "summary": "Cross-platform design tool", 
     "type": "App",
     "url": "https://www.designer.io/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-gravit.png"
   }
  
 ]
