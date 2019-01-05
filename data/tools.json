@@ -140,6 +140,19 @@
     "type": "App",
     "url": "https://www.designer.io/",
     "icon": "./images/icon-gravit.png"
-  }
- 
+  },
+  { 
+    "name": "ProtoPie", 
+    "summary": "Create the most advanced prototypes as easy as Pie", 
+    "type": "App",
+    "url": "https://www.protopie.io/",
+    "icon": "./images/icon-default.svg"
+  },
+  { 
+    "name": "Origami Studio", 
+    "summary": "Prototyping tool. built and used by designers at Facebook", 
+    "type": "App",
+    "url": "https://origami.design/",
+    "icon": "./images/icon-default.svg"
+  } 
 ]
