@@ -142,13 +142,6 @@
     "icon": "./images/icon-gravit.png"
   },
   { 
-    "name": "UXPin", 
-    "summary": "Prototyping. Documentation. Design Systems.", 
-    "type": "App",
-    "url": "https://www.uxpin.com/",
-    "icon": "./images/icon-uxpin.png"
-  },
-  { 
     "name": "ProtoPie", 
     "summary": "Create the most advanced prototypes as easy as Pie", 
     "type": "App",
@@ -168,5 +161,12 @@
     "type": "App",
     "url": "https://zeplin.io/",
     "icon": "./images/icon-zeplin.svg"
-  }  
+  }, 
+  { 
+    "name": "UXPin", 
+    "summary": "Prototyping. Documentation. Design Systems.", 
+    "type": "App",
+    "url": "https://www.uxpin.com/",
+    "icon": "./images/icon-uxpin.png"
+  }
 ]
