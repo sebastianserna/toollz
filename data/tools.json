@@ -181,6 +181,6 @@
     "summary": "Animation and interface prototyping tool.", 
     "type": "App",
     "url": "https://mokup.app/",
-    "icon": "./images/icon-default.png"
+    "icon": "./images/icon-default.svg"
   }
 ]
