@@ -168,5 +168,19 @@
     "type": "App",
     "url": "https://www.uxpin.com/",
     "icon": "./images/icon-uxpin.png"
+  },
+  { 
+    "name": "Abstract", 
+    "summary": "Version, manage, and collaborate on your Sketch files.", 
+    "type": "App",
+    "url": "https://www.goabstract.com/",
+    "icon": "./images/icon-default.svg"
+  }, 
+  { 
+    "name": "Mokup", 
+    "summary": "Animation and interface prototyping tool.", 
+    "type": "App",
+    "url": "https://mokup.app/",
+    "icon": "./images/icon-default.png"
   }
 ]
