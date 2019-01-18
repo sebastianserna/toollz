@@ -22,7 +22,7 @@
                         <span v-if="filterTools.length === 1">{{ filterTools.length }} tool</span>
                         <span v-else>{{ filterTools.length }} tools</span>
                     </span>
-                    <input class="search-input" v-model="search" type="text" placeholder="Filter tools" autocapitalize="none" />     
+                    <input id="search" class="search-input" v-model="search" type="text" placeholder="Filter tools" autocapitalize="none" />     
                 </div>
             </div>
             <!-- hero -->
@@ -92,6 +92,5 @@ window.onscroll = function() {
     }
 };
 </script>
-
 </body>
 </html>
