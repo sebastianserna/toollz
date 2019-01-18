@@ -121,7 +121,7 @@
     "icon": "./images/icon-draftium.png"
   },
   { 
-    "name": "Illustrator", 
+    "name": "Adobe Illustrator", 
     "summary": "The state of the art of illustration", 
     "type": "App",
     "url": "https://www.adobe.com/products/illustrator",
@@ -174,13 +174,13 @@
     "summary": "Version, manage, and collaborate on your Sketch files.", 
     "type": "App",
     "url": "https://www.goabstract.com/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-abstract.svg"
   }, 
   { 
     "name": "Mokup", 
     "summary": "Animation and interface prototyping tool.", 
     "type": "App",
     "url": "https://mokup.app/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-mokup.png"
   }
 ]
