@@ -140,6 +140,47 @@
     "type": "App",
     "url": "https://www.designer.io/",
     "icon": "./images/icon-gravit.png"
+  },
+  { 
+    "name": "ProtoPie", 
+    "summary": "Create the most advanced prototypes as easy as Pie", 
+    "type": "App",
+    "url": "https://www.protopie.io/",
+    "icon": "./images/icon-protopie.png"
+  },
+  { 
+    "name": "Origami Studio", 
+    "summary": "Prototyping tool built by designers at Facebook", 
+    "type": "App",
+    "url": "https://origami.design/",
+    "icon": "./images/icon-origami.png"
+  },
+  { 
+    "name": "Zeplin", 
+    "summary": "Handoff designs and styleguides with accurate specs", 
+    "type": "App",
+    "url": "https://zeplin.io/",
+    "icon": "./images/icon-zeplin.svg"
+  }, 
+  { 
+    "name": "UXPin", 
+    "summary": "Prototyping. Documentation. Design Systems.", 
+    "type": "App",
+    "url": "https://www.uxpin.com/",
+    "icon": "./images/icon-uxpin.png"
+  },
+  { 
+    "name": "Abstract", 
+    "summary": "Version, manage, and collaborate on your Sketch files.", 
+    "type": "App",
+    "url": "https://www.goabstract.com/",
+    "icon": "./images/icon-default.svg"
+  }, 
+  { 
+    "name": "Mokup", 
+    "summary": "Animation and interface prototyping tool.", 
+    "type": "App",
+    "url": "https://mokup.app/",
+    "icon": "./images/icon-default.svg"
   }
- 
 ]
