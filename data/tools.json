@@ -182,5 +182,12 @@
     "type": "App",
     "url": "https://mokup.app/",
     "icon": "./images/icon-mokup.png"
+  },
+  { 
+    "name": "Eagle", 
+    "summary": "Design library to get you 10x better organized.", 
+    "type": "App",
+    "url": "https://eagle.cool/",
+    "icon": "./images/icon-default.svg"
   }
 ]
