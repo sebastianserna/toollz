@@ -189,5 +189,12 @@
     "type": "App",
     "url": "https://eagle.cool/",
     "icon": "./images/icon-default.svg"
+  },
+  { 
+    "name": "Muzli", 
+    "summary": "The best design inspiration.", 
+    "type": "Extension",
+    "url": "https://muz.li/",
+    "icon": "./images/icon-default.svg"
   }
 ]
