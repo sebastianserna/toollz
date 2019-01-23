@@ -188,13 +188,13 @@
     "summary": "Design library to get you 10x better organized.", 
     "type": "App",
     "url": "https://eagle.cool/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-eagle.png"
   },
   { 
     "name": "Muzli", 
     "summary": "The best design inspiration.", 
     "type": "Extension",
     "url": "https://muz.li/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-muzli.png"
   }
 ]
