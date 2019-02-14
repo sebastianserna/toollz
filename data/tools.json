@@ -196,5 +196,12 @@
     "type": "Extension",
     "url": "https://muz.li/",
     "icon": "./images/icon-muzli.png"
+  },
+  { 
+    "name": "lists.design", 
+    "summary": "Real content for all your designs.", 
+    "type": "Website",
+    "url": "https://www.lists.design/",
+    "icon": "./images/icon-default.svg"
   }
 ]
