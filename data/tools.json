@@ -58,6 +58,13 @@
     "icon": "./images/icon-vectary.png"
   },
   { 
+    "name": "Blender", 
+    "summary": "Open Source 3D software", 
+    "type": "3D App",
+    "url": "https://www.blender.org/",
+    "icon": "./images/icon-default.svg"
+  },
+  { 
     "name": "CSS Peeper", 
     "summary": "Smart CSS viewer tailored for Designers", 
     "type": "Chrome Extension",
