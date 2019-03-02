@@ -62,7 +62,7 @@
     "summary": "Open Source 3D software", 
     "type": "3D App",
     "url": "https://www.blender.org/",
-    "icon": "./images/icon-default.svg"
+    "icon": "./images/icon-blender.png"
   },
   { 
     "name": "CSS Peeper", 
@@ -79,7 +79,7 @@
     "icon": "./images/icon-adobe-photoshop.svg"
   },
   { 
-    "name": "Gimp", 
+    "name": "Gimp",
     "summary": "Photo editor", 
     "type": "App",
     "url": "https://www.gimp.org",
@@ -205,10 +205,17 @@
     "icon": "./images/icon-muzli.png"
   },
   { 
-    "name": "Lists", 
-    "summary": "Real content for all your designs.", 
-    "type": "Website",
-    "url": "https://www.lists.design/",
-    "icon": "./images/icon-default.svg"
+    "name": "Flow", 
+    "summary": "Professional Sketch Animation Software", 
+    "type": "App",
+    "url": "https://createwithflow.com/",
+    "icon": "./images/icon-flow.svg"
+  },
+  { 
+    "name": "Keyframes", 
+    "summary": "A simple way to create CSS animations", 
+    "type": "App",
+    "url": "https://keyframes.app/",
+    "icon": "./images/icon-keyframes.png"
   }
 ]
