@@ -217,5 +217,12 @@
     "type": "App",
     "url": "https://keyframes.app/",
     "icon": "./images/icon-keyframes.png"
+  },
+  { 
+    "name": "Pinterest", 
+    "summary": "Discover inspiration and other ideas to try", 
+    "type": "Web App",
+    "url": "https://www.pinterest.com/",
+    "icon": "./images/icon-default.svg"
   }
 ]
