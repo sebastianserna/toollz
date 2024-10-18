@@ -106,7 +106,7 @@ main {
 
 
 .topbar {
-    overflow: auto;
+    overflow: hiddden;
     position: fixed;
     top: 0;
     left: 0;
