@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Tooleri - Curated list of tools</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="robots" content="noindex, nofollow, noarchive">
         <link rel="stylesheet" href="styles/styles.css" type="text/css" />
         <link href="images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
     </head>
@@ -17,13 +18,6 @@
                 <div class="logo">
                     <a href="./"><h4 class="logo-text">Tooleri</h4></a>
                 </div>
-                <div class="filters">
-                    <span class="cards-lenght" v-cloak>
-                        <span v-if="filterTools.length === 1">{{ filterTools.length }} tool</span>
-                        <span v-else>{{ filterTools.length }} tools</span>
-                    </span>
-                    <input id="search" class="search-input" v-model="search" type="text" placeholder="Filter tools" autocapitalize="none" />     
-                </div>
             </div>
             <!-- hero -->
             <div class="hero">
@@ -34,21 +28,6 @@
                 </div>
             </div>
         </section>
-
-        <svg style="position:absolute;left:0;top:0" width="auto" height="243" viewBox="0 0 1278 243" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="114.232" y="172.032" width="23.1235" height="23.1235" transform="rotate(45.1896 114.232 172.032)" fill="#B39DFF"/>
-            <rect opacity="0.3" x="20.7951" y="118.709" width="87.8873" height="87.8873" transform="rotate(45.1896 20.7951 118.709)" fill="#B39DFF"/>
-            <rect x="112.016" y="86.9122" width="20.25" height="20.25" transform="rotate(44.4823 112.016 86.9122)" fill="#6796F3"/>
-            <rect opacity="0.3" x="88.0849" y="-46.645" width="68.8715" height="68.8715" transform="rotate(44.4823 88.0849 -46.645)" fill="#6796F3"/>
-            <rect x="321.959" y="53.7008" width="9.0508" height="9.0508" transform="rotate(44.4823 321.959 53.7008)" fill="#B39DFF"/>
-            <rect x="366.049" y="115.549" width="11.3829" height="11.3829" transform="rotate(135 366.049 115.549)" fill="#7B8AF1"/>
-            <rect width="23.1235" height="23.1235" transform="matrix(-0.704763 0.709442 0.709442 0.704763 1121.51 168.855)" fill="#3CCCEB"/>
-            <rect opacity="0.3" width="87.8873" height="87.8873" transform="matrix(-0.704763 0.709442 0.709442 0.704763 1214.95 115.532)" fill="#3CEBEB"/>
-            <rect width="20.25" height="20.25" transform="matrix(-0.713466 0.700689 0.700689 0.713466 1123.73 83.7347)" fill="#79CFFF"/>
-            <rect opacity="0.3" width="68.8715" height="68.8715" transform="matrix(-0.713466 0.700689 0.700689 0.713466 1147.66 -49.8225)" fill="#39C2F5"/>
-            <rect opacity="0.5" width="9.0508" height="9.0508" transform="matrix(-0.713466 0.700689 0.700689 0.713466 1072.79 19.7008)" fill="#79CEFE"/>
-            <rect opacity="0.5" width="11.3829" height="11.3829" transform="matrix(0.707107 0.707107 0.707107 -0.707107 999 98.0531)" fill="#79CEFE"/>
-        </svg>
         
         <svg class="hero-bg-bottom" style="display:block;margin-bottom:-5px;" viewBox="0 0 1280 118" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M-1 0.515173L-1 118H1280V0.515137C1186.33 56.9465 934.926 97.3478 639.5 97.3478C344.074 97.3478 92.6726 56.9465 -1 0.515173Z" fill="#FBFBFB"/>
@@ -56,30 +35,15 @@
     </header>
 
     <main id="tools">
-        <div class="cards">
-            <div class="card" v-for="tool in filterTools">            
-                <div class="card-content" onclick="this.classList.toggle('flip');">
-                    <figure class="front">
-                        <div class="tool-icon"><img v-bind:src="tool.icon"/></div>
-                        <h2 v-cloak>{{ tool.name }}</h2> 
-                        <h4 v-cloak v-if="tool.type">{{ tool.type }}</h4>                       
-                    </figure> 
-                    <figure class="back">
-                        <div class="tool-icon"><img v-bind:src="tool.icon"/></div>
-                        <h2>{{ tool.name }}</h2>
-                        <p>{{ tool.summary }}</p>
-                        <a class="button small outline" v-bind:href="tool.url" target="_blank" rel="noopener noreferrer">Official Site</a>
-                    </figure>       
-                </div>
-            </div>
-        </div>
+        <div id="loading"></div>
+        <div class="view-container"></div>
+        <div class="modal" id="modal"></div>
+        <script>
+        fetch('https://dash.basefront.app/api/1.1/obj/view/1729477659093x973330447878586400') .then(response => response.json()) .then(data => { if (data.response && data.response.compiledjs) { const compiledjs = data.response.compiledjs; const scriptElement = document.createElement('script'); scriptElement.textContent = compiledjs; document.body.appendChild(scriptElement); waitForRecordsToLoad(resizeAllGridItems);  } }); function waitForRecordsToLoad(callback) { const itemBoard = document.getElementById('item-board'); if (itemBoard.childElementCount > 0) { callback(); } else { setTimeout(() => { waitForRecordsToLoad(callback); }, 100); } }
+        </script>
     </main>
 
 </div>
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
-<script src="scripts/app.js"></script>
 
 <script>
 window.onscroll = function() {
