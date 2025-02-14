@@ -1,4 +1,4 @@
-# Toolxi
+# Toollz
 
 Curated tools
-https://toolxi.com
+https://toollz.com
